@@ -1,0 +1,12 @@
+<mujoco model="op">
+    <asset>
+        <!-- 声明 mesh -->
+        <mesh name="op_mesh" file="op.stl"/>
+    </asset>
+
+    <worldbody>
+        <!-- 把 mesh 放在世界中，并添加旋转 -->
+        <geom type="mesh" mesh="op_mesh" rgba="0.5 0.5 0.5 1"
+              pos="0 0 0" euler="1.5708 1.5708 0"/>
+    </worldbody>
+</mujoco>

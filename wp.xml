@@ -1,0 +1,12 @@
+<mujoco model="wp">
+    <asset>
+        <!-- 声明 mesh -->
+        <mesh name="wp_mesh" file="wpp.stl"/>
+    </asset>
+
+    <worldbody>
+        <!-- 把 mesh 放在世界中，并添加旋转 -->
+        <geom type="mesh" mesh="wp_mesh" rgba="0.5 0.5 0.5 1"
+              pos="0 0 0" />
+    </worldbody>
+</mujoco>
